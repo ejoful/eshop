@@ -3,10 +3,11 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=yii2advanced',
+            'dsn' => 'mysql:host=localhost;dbname=taobao_shop',
             'username' => 'root',
-            'password' => '',
+            'password' => 'moon',
             'charset' => 'utf8',
+            'tablePrefix' => 'tbl_',
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
