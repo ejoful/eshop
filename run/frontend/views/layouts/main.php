@@ -36,9 +36,14 @@ AppAsset::register($this);
         ],
     ]);
     $menuItems = [
-        ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'About', 'url' => ['/site/about']],
-        ['label' => 'Contact', 'url' => ['/site/contact']],
+        ['label' => '首页', 'url' => ['/site/index']],
+        ['label' => '所有产品', 'url' => ['/search/index']],
+        ['label' => '手卷钢琴', 'url' => ['/category/index']],
+        ['label' => '电钢琴', 'url' => ['/category/index']],
+        ['label' => '电子琴', 'url' => ['/category/index']],
+        ['label' => '青汁', 'url' => ['/category/index']],
+        ['label' => '关于', 'url' => ['/site/about']],
+        ['label' => '联系我们', 'url' => ['/site/contact']],
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];

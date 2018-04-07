@@ -48,32 +48,40 @@ return array (
       '@yii/faker' => $vendorDir . '/yiisoft/yii2-faker',
     ),
   ),
-  'yiisoft/yii2-httpclient' => 
+  'mdmsoft/yii2-admin' => 
   array (
-    'name' => 'yiisoft/yii2-httpclient',
-    'version' => '2.0.6.0',
+    'name' => 'mdmsoft/yii2-admin',
+    'version' => '2.8.0.0',
     'alias' => 
     array (
-      '@yii/httpclient' => $vendorDir . '/yiisoft/yii2-httpclient/src',
+      '@mdm/admin' => $vendorDir . '/mdmsoft/yii2-admin',
     ),
   ),
-  'yiisoft/yii2-authclient' => 
+  'cebe/yii2-gravatar' => 
   array (
-    'name' => 'yiisoft/yii2-authclient',
-    'version' => '2.1.5.0',
+    'name' => 'cebe/yii2-gravatar',
+    'version' => '1.1.0.0',
     'alias' => 
     array (
-      '@yii/authclient' => $vendorDir . '/yiisoft/yii2-authclient/src',
+      '@cebe/gravatar' => $vendorDir . '/cebe/yii2-gravatar/cebe/gravatar',
     ),
   ),
-  'dektrium/yii2-user' => 
+  'rmrevin/yii2-fontawesome' => 
   array (
-    'name' => 'dektrium/yii2-user',
-    'version' => '0.9.14.0',
+    'name' => 'rmrevin/yii2-fontawesome',
+    'version' => '2.17.1.0',
     'alias' => 
     array (
-      '@dektrium/user' => $vendorDir . '/dektrium/yii2-user',
+      '@rmrevin/yii/fontawesome' => $vendorDir . '/rmrevin/yii2-fontawesome',
     ),
-    'bootstrap' => 'dektrium\\user\\Bootstrap',
+  ),
+  'dmstr/yii2-adminlte-asset' => 
+  array (
+    'name' => 'dmstr/yii2-adminlte-asset',
+    'version' => '2.6.0.0',
+    'alias' => 
+    array (
+      '@dmstr' => $vendorDir . '/dmstr/yii2-adminlte-asset',
+    ),
   ),
 );

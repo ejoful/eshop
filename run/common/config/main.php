@@ -9,10 +9,17 @@ return [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
-    ],
-    'modules' => [
-        'user' => [
-            'class' => 'dektrium\user\Module',
+        'i18n' => [
+            'translations' => [
+                '*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@backend/messages', // if advanced application, set @frontend/messages
+                    'sourceLanguage' => 'en',
+                    'fileMap' => [
+                        //'main' => 'main.php',
+                    ],
+                ],
+            ],
         ],
     ],
 ];
