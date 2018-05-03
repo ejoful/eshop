@@ -7,7 +7,8 @@ use Yii;
 /**
  * This is the model class for table "{{%category_attribute}}".
  *
- * @property int $catattrid
+ * @property int $id
+ * @property int $catid 分类id
  * @property int $attrid 属性id
  * @property int $position 排序
  */
@@ -27,8 +28,8 @@ class CategoryAttribute extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['attrid', 'position'], 'required'],
-            [['attrid'], 'integer'],
+            [['catid', 'attrid', 'position'], 'required'],
+            [['catid', 'attrid'], 'integer'],
             [['position'], 'string', 'max' => 2],
         ];
     }
@@ -39,7 +40,8 @@ class CategoryAttribute extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'catattrid' => Yii::t('app', 'Catattrid'),
+            'id' => Yii::t('app', 'ID'),
+            'catid' => Yii::t('app', '分类id'),
             'attrid' => Yii::t('app', '属性id'),
             'position' => Yii::t('app', '排序'),
         ];

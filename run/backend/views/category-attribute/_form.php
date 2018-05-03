@@ -12,6 +12,8 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
+    <?= $form->field($model, 'catid')->textInput() ?>
+
     <?= $form->field($model, 'attrid')->textInput() ?>
 
     <?= $form->field($model, 'position')->textInput() ?>

@@ -18,7 +18,9 @@ use yii\widgets\ActiveForm;
         ],
     ]); ?>
 
-    <?= $form->field($model, 'catattrid') ?>
+    <?= $form->field($model, 'id') ?>
+
+    <?= $form->field($model, 'catid') ?>
 
     <?= $form->field($model, 'attrid') ?>
 

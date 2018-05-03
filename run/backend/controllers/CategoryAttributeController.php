@@ -67,7 +67,7 @@ class CategoryAttributeController extends Controller
         $model = new CategoryAttribute();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->catattrid]);
+            return $this->redirect(['view', 'id' => $model->id]);
         }
 
         return $this->render('create', [
@@ -87,7 +87,7 @@ class CategoryAttributeController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->catattrid]);
+            return $this->redirect(['view', 'id' => $model->id]);
         }
 
         return $this->render('update', [

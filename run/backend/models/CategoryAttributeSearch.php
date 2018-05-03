@@ -18,7 +18,7 @@ class CategoryAttributeSearch extends CategoryAttribute
     public function rules()
     {
         return [
-            [['catattrid', 'attrid'], 'integer'],
+            [['id', 'catid', 'attrid'], 'integer'],
             [['position'], 'safe'],
         ];
     }
@@ -59,7 +59,8 @@ class CategoryAttributeSearch extends CategoryAttribute
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'catattrid' => $this->catattrid,
+            'id' => $this->id,
+            'catid' => $this->catid,
             'attrid' => $this->attrid,
         ]);
 
