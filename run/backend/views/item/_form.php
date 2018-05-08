@@ -46,6 +46,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'window_reco')->textInput() ?>
 
+    <?= $form->field($model, 'userid')->textInput() ?>
+
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>
     </div>

@@ -4,20 +4,20 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
 /* @var $this yii\web\View */
-/* @var $searchModel backend\models\ItemPcImgSearch */
+/* @var $searchModel backend\models\SkuAttributeValueSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Item Pc Imgs');
+$this->title = Yii::t('app', 'Sku Attribute Values');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="item-pc-img-index">
+<div class="sku-attribute-value-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php Pjax::begin(); ?>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a(Yii::t('app', 'Create Item Pc Img'), ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('app', 'Create Sku Attribute Value'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -27,10 +27,9 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'itemid',
-            'name',
-//             'path',
-            'position',
+            'title',
+            'value',
+            'attr_name_id',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

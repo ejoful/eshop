@@ -14,11 +14,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'itemid')->textInput() ?>
 
-    <?= $form->field($model, 'colorid')->textInput() ?>
-
-    <?= $form->field($model, 'packageid')->textInput() ?>
+    <?= $form->field($model, 'sku_attr')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'price')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'promotion_price')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'num')->textInput() ?>
 

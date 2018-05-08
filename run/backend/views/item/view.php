@@ -46,6 +46,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'warranty:ntext',
             'online_time',
             'window_reco',
+            'userid',
         ],
     ]) ?>
 

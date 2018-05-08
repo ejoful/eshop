@@ -18,7 +18,7 @@ class ItemSearch extends Item
     public function rules()
     {
         return [
-            [['itemid', 'catid', 'num', 'transid'], 'integer'],
+            [['itemid', 'catid', 'num', 'transid', 'userid'], 'integer'],
             [['type', 'title', 'img_video', 'business_code', 'product_barcode', 'purchase_place', 'item_video', 'pc_des', 'mob_des', 'warranty', 'online_time', 'window_reco'], 'safe'],
             [['price', 'discount_price'], 'number'],
         ];
@@ -66,6 +66,7 @@ class ItemSearch extends Item
             'discount_price' => $this->discount_price,
             'num' => $this->num,
             'transid' => $this->transid,
+            'userid' => $this->userid,
         ]);
 
         $query->andFilterWhere(['like', 'type', $this->type])

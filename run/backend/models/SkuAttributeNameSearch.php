@@ -5,12 +5,12 @@ namespace backend\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use backend\models\ItemSku;
+use backend\models\SkuAttributeName;
 
 /**
- * ItemSkuSearch represents the model behind the search form of `backend\models\ItemSku`.
+ * SkuAttributeNameSearch represents the model behind the search form of `backend\models\SkuAttributeName`.
  */
-class ItemSkuSearch extends ItemSku
+class SkuAttributeNameSearch extends SkuAttributeName
 {
     /**
      * @inheritdoc
@@ -18,9 +18,8 @@ class ItemSkuSearch extends ItemSku
     public function rules()
     {
         return [
-            [['skuId', 'itemid', 'num'], 'integer'],
-            [['sku_attr', 'business_code', 'product_barcode'], 'safe'],
-            [['price', 'promotion_price'], 'number'],
+            [['attr_name_id'], 'integer'],
+            [['name', 'cartid'], 'safe'],
         ];
     }
 
@@ -42,7 +41,7 @@ class ItemSkuSearch extends ItemSku
      */
     public function search($params)
     {
-        $query = ItemSku::find();
+        $query = SkuAttributeName::find();
 
         // add conditions that should always apply here
 
@@ -60,16 +59,11 @@ class ItemSkuSearch extends ItemSku
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'skuId' => $this->skuId,
-            'itemid' => $this->itemid,
-            'price' => $this->price,
-            'promotion_price' => $this->promotion_price,
-            'num' => $this->num,
+            'attr_name_id' => $this->attr_name_id,
         ]);
 
-        $query->andFilterWhere(['like', 'sku_attr', $this->sku_attr])
-            ->andFilterWhere(['like', 'business_code', $this->business_code])
-            ->andFilterWhere(['like', 'product_barcode', $this->product_barcode]);
+        $query->andFilterWhere(['like', 'name', $this->name])
+            ->andFilterWhere(['like', 'cartid', $this->cartid]);
 
         return $dataProvider;
     }

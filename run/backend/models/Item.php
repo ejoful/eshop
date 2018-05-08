@@ -25,6 +25,7 @@ use Yii;
  * @property string $warranty 售后服务
  * @property string $online_time 上架时间
  * @property int $window_reco 橱窗推荐
+ * @property int $userid 卖家编号
  */
 class Item extends \yii\db\ActiveRecord
 {
@@ -42,8 +43,8 @@ class Item extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['catid', 'type', 'title', 'price', 'num', 'purchase_place', 'pc_des', 'online_time', 'window_reco'], 'required'],
-            [['catid', 'num', 'transid'], 'integer'],
+            [['catid', 'type', 'title', 'price', 'num', 'purchase_place', 'pc_des', 'online_time', 'window_reco', 'userid'], 'required'],
+            [['catid', 'num', 'transid', 'userid'], 'integer'],
             [['img_video', 'item_video', 'pc_des', 'mob_des', 'warranty'], 'string'],
             [['price', 'discount_price'], 'number'],
             [['type'], 'string', 'max' => 4],
@@ -79,6 +80,7 @@ class Item extends \yii\db\ActiveRecord
             'warranty' => Yii::t('app', '售后服务'),
             'online_time' => Yii::t('app', '上架时间'),
             'window_reco' => Yii::t('app', '橱窗推荐'),
+            'userid' => Yii::t('app', '卖家编号'),
         ];
     }
 

@@ -28,9 +28,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'skuId',
             'itemid',
-            'colorid',
-            'packageid',
+            'sku_attr',
             'price',
+            'promotion_price',
             //'num',
             //'business_code',
             //'product_barcode',

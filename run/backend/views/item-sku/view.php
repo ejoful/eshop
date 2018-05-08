@@ -30,9 +30,9 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'skuId',
             'itemid',
-            'colorid',
-            'packageid',
+            'sku_attr',
             'price',
+            'promotion_price',
             'num',
             'business_code',
             'product_barcode',

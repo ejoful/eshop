@@ -4,11 +4,11 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model backend\models\ItemSkuSearch */
+/* @var $model backend\models\SkuAttributeValueSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="item-sku-search">
+<div class="sku-attribute-value-search">
 
     <?php $form = ActiveForm::begin([
         'action' => ['index'],
@@ -18,21 +18,13 @@ use yii\widgets\ActiveForm;
         ],
     ]); ?>
 
-    <?= $form->field($model, 'skuId') ?>
+    <?= $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'itemid') ?>
+    <?= $form->field($model, 'title') ?>
 
-    <?= $form->field($model, 'sku_attr') ?>
+    <?= $form->field($model, 'value') ?>
 
-    <?= $form->field($model, 'price') ?>
-
-    <?= $form->field($model, 'promotion_price') ?>
-
-    <?php // echo $form->field($model, 'num') ?>
-
-    <?php // echo $form->field($model, 'business_code') ?>
-
-    <?php // echo $form->field($model, 'product_barcode') ?>
+    <?= $form->field($model, 'attr_name_id') ?>
 
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Search'), ['class' => 'btn btn-primary']) ?>
