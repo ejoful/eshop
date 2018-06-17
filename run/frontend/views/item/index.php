@@ -31,20 +31,20 @@ button {
 			<div class="tb-property">
 				<div class="tb-wrap">
 					<div class="tb-detail-hd" data-spm-anchor-id="a220o.1000855.0.i2.7f6e3fc6Y1zAxu">
-						<h1 data-spm="1000983">音格格手卷电子钢琴便携式88键初学者成人家用键盘专业加厚版入门</h1>
+						<h1 data-spm="1000983"><?= $model->title; ?></h1>
 						<div class="tb-detail-sellpoint">
 						</div>
 					</div>
 					<div class="tm-fcs-panel">
 						<dl class="tm-price-panel" id="J_StrPriceModBox">
 							<dt class="tb-metatit">价格</dt>
-							<dd><em class="tm-yen">¥</em><span class="tm-price">796.00</span></dd>
+							<dd><em class="tm-yen">¥</em><span class="tm-price"><?= $model->price; ?></span></dd>
 						</dl>
 						<dl class="tm-promo-panel tm-promo-cur" id="J_PromoPrice" data-label="促销价">
 							<dt class="tb-metatit" style="color:#ff0036;font-weight:bold">优惠价</dt>
 							<dd>
 							<div class="tm-promo-price">
-								<em class="tm-yen">¥</em><span class="tm-price">368.00</span>
+								<em class="tm-yen">¥</em><span class="tm-price"><?= $model->discount_price; ?></span>
 							</div>
 							<p>
 							</p>
@@ -317,31 +317,39 @@ button {
 					<h4 class="hd">商品详情</h4>
 					<div class="content ke-post" style="height:auto">
 						<p>
-							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i4/3021610629/TB2k80CkNSYBuNjSsphXXbGvVXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i4/3021610629/TB2BVi.kTlYBeNjSszcXXbwhFXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i4/3021610629/TB2WMigkKySBuNjy1zdXXXPxFXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i2/3021610629/TB2wa9SkNGYBuNjy0FnXXX5lpXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i4/3021610629/TB2.5M8bBnTBKNjSZPfXXbf1XXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i3/3021610629/TB2GMXMX6JTMKJjSZFPXXbHUFXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i1/3021610629/TB2NsZhbCfD8KJjSszhXXbIJFXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i1/3021610629/TB2PNS7aXHM8KJjSZJiXXbx3FXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i4/3021610629/TB2LYoCX2al9eJjSZFzXXaITVXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i3/3021610629/TB2irmtaDZKL1JjSZFIXXX_DFXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i2/3021610629/TB2vjsnXRUSMeJjSspfXXX0VFXa_!!3021610629.jpg" class="img-ks-lazyload"><img alt="" src="https://img.alicdn.com/imgextra/i3/3021610629/TB2mxqHXkfb_uJkHFJHXXb4vFXa_!!3021610629.jpg" class="img-ks-lazyload"><img alt="" src="https://img.alicdn.com/imgextra/i3/3021610629/TB2cST2bxHI8KJjy1zbXXaxdpXa_!!3021610629.jpg" class="img-ks-lazyload"><img alt="" src="https://img.alicdn.com/imgextra/i4/3021610629/TB2QE_haInI8KJjSspeXXcwIpXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i1/3021610629/TB2nr1taDwKL1JjSZFgXXb6aVXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i3/3021610629/TB21qqlaC7PL1JjSZFHXXcciXXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i3/3021610629/TB2usjaagjN8KJjSZFkXXaboXXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i3/3021610629/TB2c8uuayAKL1JjSZFoXXagCFXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i4/3021610629/TB2Ru1yaukJL1JjSZFmXXcw0XXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i2/3021610629/TB2vTIoXUgQMeJjy0FjXXaExFXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i4/3021610629/TB2SMgnXRUSMeJjSszbXXberFXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i3/3021610629/TB2W7cqXOERMeJjSspiXXbZLFXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i1/3021610629/TB2ODMoXUgQMeJjy0FjXXaExFXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i4/3021610629/TB26P3sXMoQMeJjy0FpXXcTxpXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i2/3021610629/TB2an.mXHsTMeJjSsziXXcdwXXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i3/3021610629/TB2NQtgXSFRMKJjy0FhXXX.xpXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i3/3021610629/TB2DsMlXRUSMeJjSszcXXbnwVXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i4/3021610629/TB2MAlLX8RRMKJjSZPhXXcZoVXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i3/3021610629/TB2kF8XdhPI8KJjSspoXXX6MFXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i2/3021610629/TB2TiCoawkLL1JjSZFpXXa7nFXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i2/3021610629/TB2S8bYcA.HL1JjSZFuXXX8dXXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="https://img.alicdn.com/imgextra/i4/3021610629/TB23oFNX5FTMKJjSZFAXXckJpXa_!!3021610629.jpg" class="img-ks-lazyload"><img align="absmiddle" src="//img-tmdetail.alicdn.com/tps/i3/T1BYd_XwFcXXb9RTPq-90-90.png" data-ks-lazyload="https://img.alicdn.com/imgextra/i4/3021610629/TB2Tv5saDAKL1JjSZFCXXXFspXa_!!3021610629.jpg">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i4/3021610629/TB2k80CkNSYBuNjSsphXXbGvVXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i4/3021610629/TB2BVi.kTlYBeNjSszcXXbwhFXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i4/3021610629/TB2WMigkKySBuNjy1zdXXXPxFXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i2/3021610629/TB2wa9SkNGYBuNjy0FnXXX5lpXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i4/3021610629/TB2.5M8bBnTBKNjSZPfXXbf1XXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i3/3021610629/TB2GMXMX6JTMKJjSZFPXXbHUFXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i1/3021610629/TB2NsZhbCfD8KJjSszhXXbIJFXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i1/3021610629/TB2PNS7aXHM8KJjSZJiXXbx3FXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i4/3021610629/TB2LYoCX2al9eJjSZFzXXaITVXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i3/3021610629/TB2irmtaDZKL1JjSZFIXXX_DFXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i2/3021610629/TB2vjsnXRUSMeJjSspfXXX0VFXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img alt="" src="https://img.alicdn.com/imgextra/i3/3021610629/TB2mxqHXkfb_uJkHFJHXXb4vFXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img alt="" src="https://img.alicdn.com/imgextra/i3/3021610629/TB2cST2bxHI8KJjy1zbXXaxdpXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img alt="" src="https://img.alicdn.com/imgextra/i4/3021610629/TB2QE_haInI8KJjSspeXXcwIpXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i1/3021610629/TB2nr1taDwKL1JjSZFgXXb6aVXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i3/3021610629/TB21qqlaC7PL1JjSZFHXXcciXXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i3/3021610629/TB2usjaagjN8KJjSZFkXXaboXXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i3/3021610629/TB2c8uuayAKL1JjSZFoXXagCFXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i4/3021610629/TB2Ru1yaukJL1JjSZFmXXcw0XXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i2/3021610629/TB2vTIoXUgQMeJjy0FjXXaExFXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i4/3021610629/TB2SMgnXRUSMeJjSszbXXberFXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i3/3021610629/TB2W7cqXOERMeJjSspiXXbZLFXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i1/3021610629/TB2ODMoXUgQMeJjy0FjXXaExFXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i4/3021610629/TB26P3sXMoQMeJjy0FpXXcTxpXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i2/3021610629/TB2an.mXHsTMeJjSsziXXcdwXXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i3/3021610629/TB2NQtgXSFRMKJjy0FhXXX.xpXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i3/3021610629/TB2DsMlXRUSMeJjSszcXXbnwVXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i4/3021610629/TB2MAlLX8RRMKJjSZPhXXcZoVXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i3/3021610629/TB2kF8XdhPI8KJjSspoXXX6MFXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i2/3021610629/TB2TiCoawkLL1JjSZFpXXa7nFXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i2/3021610629/TB2S8bYcA.HL1JjSZFuXXX8dXXa_!!3021610629.jpg" class="img-ks-lazyload">
+							<img align="absmiddle" src="https://img.alicdn.com/imgextra/i4/3021610629/TB23oFNX5FTMKJjSZFAXXckJpXa_!!3021610629.jpg" class="img-ks-lazyload">
 						</p>
-					</div>
-				</div>
-				<div id="J_DcBottomRightWrap">
-					<div id="J_DcBottomRight" class="J_DcAsyn tb-shop">
-					</div>
-					<div id="J_ZebraPriceDesc" class="j-mdv" mdv-cls="malldetail/view/zebraBlock" mdv-cfg="{zebraId:'pricedesc_pc',append:true,catId:50017505 }">
-					</div>
-				</div>
-				<div id="J_Detail">
-					<div id="J_Reviews" class="J_DetailSection">
-						<h4 class="hd">累计评价 <em class="J_ReviewsCount"></em></h4>
-					</div>
-					<div class="j-mdv" mdv-cls="malldetail/view/zebraBlock" mdv-cfg="{zebraId:'tmallapkratetab'}" id="J_TmallApkRateTab">
-					</div>
-					<div class="j-mdv" mdv-cls="malldetail/view/tmsBlock" style="display:none" mdv-cfg="{tmsId:'tmallapk'}" id="J_TmallApkBuyerList">
-					</div>
-					<div id="J_SellerInfo" class="J_DetailSection tb-sellerinfo" data-url="//ext-mdskip.taobao.com/extension/seller_info.htm?user_num_id=3021610629&amp;user_tag=38899744&amp;shop_start=1477404939000">
-						<h5 class="hd">店铺30天服务情况</h5>
-					</div>
-					<div id="J_TabRecommends" class="J_DetailSection">
-						<h4 class="hd">猜你喜欢</h4>
-					</div>
-					<div id="official-remind" class="j-mdv" mdv-cls="malldetail/view/zebraBlock" mdv-cfg="{zebraId:'official_remind'}">
 					</div>
 				</div>
 			</div>
