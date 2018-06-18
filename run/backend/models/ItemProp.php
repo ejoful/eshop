@@ -8,6 +8,7 @@ use Yii;
  * This is the model class for table "{{%item_prop}}".
  *
  * @property int $pid 属性 ID 例：品牌的PID=20000
+ * @property string $name 属性名
  * @property string $child_template 属性的模板（卖家自行输入属性时需要用到）
  * @property int $cid 类目ID
  * @property string $features 属性的feature列表
@@ -25,7 +26,6 @@ use Yii;
  * @property string $modified_type 三种枚举类型：modify，add，delete（增量类目专用）
  * @property int $multi 发布产品或商品时是否可以多选。可选值:true(是),false(否)
  * @property int $must 发布产品或商品时是否为必选属性。可选值:true(是),false(否)
- * @property string $name 属性名
  * @property int $parent_pid 上级属性ID
  * @property int $parent_vid 上级属性值ID
  * @property string $required 发布产品或商品时是否为必选属性(与must相同)。可选值:true(是),false(否)
@@ -52,15 +52,14 @@ class ItemProp extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['pid', 'cid', 'is_allow_alias', 'material_do', 'name', 'parent_pid', 'parent_vid', 'required', 'sort_order', 'taosir_do', 'type'], 'required'],
-            [['pid', 'cid', 'material_do', 'parent_pid', 'parent_vid', 'sort_order'], 'integer'],
+            [['name', 'cid', 'is_allow_alias', 'material_do', 'parent_pid', 'parent_vid', 'required', 'sort_order', 'taosir_do', 'type'], 'required'],
+            [['cid', 'material_do', 'parent_pid', 'parent_vid', 'sort_order'], 'integer'],
             [['modified_time'], 'safe'],
             [['modified_type'], 'string'],
+            [['name', 'features', 'required', 'child_path', 'attr_keys'], 'string', 'max' => 100],
             [['child_template'], 'string', 'max' => 500],
-            [['features', 'name', 'required', 'child_path', 'attr_keys'], 'string', 'max' => 100],
             [['is_allow_alias', 'is_color_prop', 'is_enum_prop', 'is_input_prop', 'is_item_prop', 'is_key_prop', 'is_material', 'is_sale_prop', 'is_taosir', 'multi', 'must', 'status', 'taosir_do'], 'string', 'max' => 1],
             [['type'], 'string', 'max' => 20],
-            [['pid'], 'unique'],
         ];
     }
 
@@ -71,6 +70,7 @@ class ItemProp extends \yii\db\ActiveRecord
     {
         return [
             'pid' => Yii::t('app', '属性 ID 例：品牌的PID=20000'),
+            'name' => Yii::t('app', '属性名'),
             'child_template' => Yii::t('app', '属性的模板（卖家自行输入属性时需要用到）'),
             'cid' => Yii::t('app', '类目ID'),
             'features' => Yii::t('app', '属性的feature列表'),
@@ -88,7 +88,6 @@ class ItemProp extends \yii\db\ActiveRecord
             'modified_type' => Yii::t('app', '三种枚举类型：modify，add，delete（增量类目专用）'),
             'multi' => Yii::t('app', '发布产品或商品时是否可以多选。可选值:true(是),false(否)'),
             'must' => Yii::t('app', '发布产品或商品时是否为必选属性。可选值:true(是),false(否)'),
-            'name' => Yii::t('app', '属性名'),
             'parent_pid' => Yii::t('app', '上级属性ID'),
             'parent_vid' => Yii::t('app', '上级属性值ID'),
             'required' => Yii::t('app', '发布产品或商品时是否为必选属性(与must相同)。可选值:true(是),false(否)'),

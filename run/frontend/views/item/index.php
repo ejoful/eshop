@@ -130,28 +130,6 @@ button {
 			<div data-spm="1997427645" class="tb-gallery">
 				<div class="tb-booth">
 					<a href="javascript:void(0);"><span class="zoomIcon">󰄬</span><img id="J_ImgBooth" alt="音格格手卷电子钢琴便携式88键初学者成人家用键盘专业加厚版入门" src="//img.alicdn.com/imgextra/i3/3021610629/TB2acqef2DH8KJjy1XcXXcpdXXa_!!3021610629.jpg_430x430q90.jpg" data-haszoom="700"></a><i class="tm-video-play J_playVideo" style="display:none">󰀓</i><i class="tm-video-stop J_stopVideo" style="display:inline"><b></b><s></s></i>
-					<div class="tm-video-box" style="height:420px;width:420px">
-						<div class="lib-video vjs-has-started">
-							<video class="lib-video" loop controlslist="" webkit-playsinline="webkit-playsinline" playsinline="playsinline" autoplay poster="//img.alicdn.com/imgextra/i4/6000000004118/TB2tUHWbZnI8KJjSspeXXcwIpXa_!!0-0-tbvideo.jpg_600x600.jpg" src="//cloud.video.taobao.com/play/u/3021610629/p/1/e/6/t/1/50043870796.mp4" type="video/mp4"></video>
-							<div class="vjs-center-container loading">
-								<button class="vjs-center-load vjs-button" role="button" type="button"><span class="vjs-control-text">Load</span></button><button class="vjs-center-start vjs-button" role="button" type="button"><span class="vjs-control-text">start</span></button>
-							</div>
-							<div class="vjs-control-bar vjs-opacity-hidden vjs-hidden">
-								<button class="vjs-play-control vjs-control vjs-button vjs-playing" tabindex="0" role="button" type="button"><span class="vjs-control-text">Play</span></button>
-								<div class="progress-wrap">
-									<div class="vjs-progress-bar">
-										<span class="current-time"><em class="J_CurrentTime">0:20</em></span><span class="progress-bar J_ProgressBar"><span class="progress J_Progress" style="width:33.4561%"><span class="control J_Update"></span></span></span><span class="total-time"><em class="J_TotalTime">1:00</em></span>
-									</div>
-								</div>
-								<div class="volume-wrap volume-show">
-									<div class="vjs-volume-bar">
-										<span class="vjs-icon-volume J_VolumeIcon vjs-icon-volume-muted"></span><span class="volume-bar J_VolumeBar"><span class="volume J_Volume" style="width:100%"><span class="control J_Update"></span></span></span>
-									</div>
-								</div>
-								<button class="interact-item J_Interact_Item vjs-hidden"></button><button class="vjs-fullscreen-control vjs-control vjs-button" tabindex="0" role="button" type="button"><span class="vjs-control-text">Fullscreen</span></button>
-							</div>
-						</div>
-					</div>
 				</div>
 				<div class="tb-thumb-warp">
 					<a class="tb-thumb-left"><i></i></a>
@@ -262,43 +240,25 @@ button {
 					<div class="attributes-list" id="J_AttrList">
 						<div class="tm-clear tb-hidden tm_brandAttr" id="J_BrandAttr" style="display:block">
 							<div class="name">
-								品牌名称：<b class="J_EbrandLogo" target="_blank" href="//brand.tmall.com/brandInfo.htm?brandId=1547244941&amp;type=0&amp;scm=1048.1.1.4">音格格</b>
+								品牌名称：<b class="J_EbrandLogo" target="_blank"><?= $props_str_arr['品牌'] ?></b>
 							</div>
 						</div>
 						<p class="attr-list-hd tm-clear">
 							<em>产品参数：</em>
 						</p>
 						<ul id="J_AttrUL">
-							<li id="J_attrBrandName" title="&nbsp;音格格">品牌:&nbsp;音格格</li>
-							<li title="&nbsp;Q8">型号:&nbsp;Q8</li>
-							<li title="&nbsp;旗舰版-61键【不支持充电】&nbsp;尊贵版88键黑【魔音喇叭＋精美包装】送踏板&nbsp;尊贵版88键粉【魔音喇叭＋精美包装】送踏板&nbsp;尊贵版88键白【魔音喇叭＋精美包装】送踏板&nbsp;">颜色分类:&nbsp;旗舰版-61键【不支持充电】&nbsp;尊贵版88键黑【魔音喇叭＋精美包装】送踏板&nbsp;尊贵版88键粉【魔音喇叭＋精美包装】送踏板&nbsp;尊贵版88键白【魔音喇叭＋精美包装】送踏板&nbsp;</li>
-							<li title="&nbsp;88键">键数:&nbsp;88键</li>
-							<li title="&nbsp;101种(含)-200种(含)">音色数:&nbsp;101种(含)-200种(含)</li>
-							<li title="&nbsp;128个">最大复音数:&nbsp;128个</li>
-							<li title="&nbsp;101首及以上">示范曲数:&nbsp;101首及以上</li>
+						<?php 
+						$prop_li_str = '';
+						foreach ($props_str_arr as $key => $value) {
+						    if ($key == '品牌') {
+						        $prop_li_str .= "<li id='J_attrBrandName' title='$value'>$key:&nbsp;$value</li>";
+						    } else {
+						        $prop_li_str .= "<li title='$key'>$key:$value</li>";
+						    }
+						}
+						echo $prop_li_str;
+						?>
 						</ul>
-					</div>
-				</div>
-				<div id="item-flash">
-					<div class="lib-video vjs-has-paused">
-						<video class="lib-video" controlslist="" webkit-playsinline="webkit-playsinline" playsinline="playsinline" autoplay poster="" src="//cloud.video.taobao.com/play/u/3021610629/p/2/e/6/t/1/50043870796.mp4" type="video/mp4"></video>
-						<div class="vjs-center-container">
-							<button class="vjs-center-load vjs-button" role="button" type="button"><span class="vjs-control-text">Load</span></button><button class="vjs-center-start vjs-button" role="button" type="button"><span class="vjs-control-text">start</span></button>
-						</div>
-						<div class="vjs-control-bar vjs-opacity-hidden vjs-hidden">
-							<button class="vjs-play-control vjs-control vjs-button" tabindex="0" role="button" type="button"><span class="vjs-control-text">Play</span></button>
-							<div class="progress-wrap">
-								<div class="vjs-progress-bar">
-									<span class="current-time"><em class="J_CurrentTime">1:00</em></span><span class="progress-bar J_ProgressBar"><span class="progress J_Progress" style="width:100%"><span class="control J_Update"></span></span></span><span class="total-time"><em class="J_TotalTime">1:00</em></span>
-								</div>
-							</div>
-							<div class="volume-wrap volume-show">
-								<div class="vjs-volume-bar">
-									<span class="vjs-icon-volume J_VolumeIcon vjs-icon-volume-muted"></span><span class="volume-bar J_VolumeBar"><span class="volume J_Volume" style="width:100%"><span class="control J_Update"></span></span></span>
-								</div>
-							</div>
-							<button class="interact-item J_Interact_Item vjs-hidden"></button><button class="vjs-fullscreen-control vjs-control vjs-button" tabindex="0" role="button" type="button"><span class="vjs-control-text">Fullscreen</span></button>
-						</div>
 					</div>
 				</div>
 				<div id="mall-banner">
