@@ -8,25 +8,25 @@ $params = array_merge(
 
 return [
     'id' => 'app-frontend',
-    'name' => 'test',
+    'name' => '音格格',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'modules' => [
     ],
     'components' => [
-        'assetManager' => [
-            'bundles' => [
-                'yii\bootstrap\BootstrapAsset' => [
-                    'css' => [],  // 去除 bootstrap.css
-                    'sourcePath' => null, // 防止在 frontend/web/asset 下生产文件
-                ],
-                'yii\bootstrap\BootstrapPluginAsset' => [
-                    'js' => [],  // 去除 bootstrap.js
-                    'sourcePath' => null,  // 防止在 frontend/web/asset 下生产文件
-                ],
-            ],
-        ],
+//         'assetManager' => [
+//             'bundles' => [
+//                 'yii\bootstrap\BootstrapAsset' => [
+//                     'css' => [],  // 去除 bootstrap.css
+//                     'sourcePath' => null, // 防止在 frontend/web/asset 下生产文件
+//                 ],
+//                 'yii\bootstrap\BootstrapPluginAsset' => [
+//                     'js' => [],  // 去除 bootstrap.js
+//                     'sourcePath' => null,  // 防止在 frontend/web/asset 下生产文件
+//                 ],
+//             ],
+//         ],
         'request' => [
             'csrfParam' => '_csrf-frontend',
         ],

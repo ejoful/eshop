@@ -103,7 +103,7 @@ a {
 }
 .navbar {
     min-height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     border: 1px solid transparent;
 }
 /* @media (min-width: 1200px) */
@@ -153,7 +153,19 @@ a {
 }
 
 .wrap > #page {
-    padding: 70px 15px 20px;
+    padding: 52px 15px 20px;
+}
+.slide {
+    width: 990px;
+    height: 450px;
+    margin: 0 auto;
+}
+.carousel-inner > .item > img {
+    width: 990px;
+    height: 450px;
+}
+.carousel-control {
+    background: none !important;
 }
 </style>
     <?php
@@ -167,28 +179,25 @@ a {
     $menuItems = [
         ['label' => '首页', 'url' => ['/site/index']],
         ['label' => '所有产品', 'url' => ['/search/index']],
-        ['label' => '手卷钢琴', 'url' => ['/category/index']],
-        ['label' => '电钢琴', 'url' => ['/category/index']],
-        ['label' => '电子琴', 'url' => ['/category/index']],
-        ['label' => '青汁', 'url' => ['/category/index']],
-        ['label' => '关于', 'url' => ['/site/about']],
-        ['label' => '联系我们', 'url' => ['/site/contact']],
+//         ['label' => '手卷钢琴', 'url' => ['/category/index']],
+        ['label' => '关于我们', 'url' => ['/site/about']],
+//         ['label' => '联系我们', 'url' => ['/site/contact']],
     ];
-    if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-    } else {
-        $menuItems[] = '<li>'
-            . Html::beginForm(['/site/logout'], 'post')
-            . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
-                ['class' => 'btn btn-link logout']
-            )
-            . Html::endForm()
-            . '</li>';
-    }
+//     if (Yii::$app->user->isGuest) {
+//         $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
+//         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+//     } else {
+//         $menuItems[] = '<li>'
+//             . Html::beginForm(['/site/logout'], 'post')
+//             . Html::submitButton(
+//                 'Logout (' . Yii::$app->user->identity->username . ')',
+//                 ['class' => 'btn btn-link logout']
+//             )
+//             . Html::endForm()
+//             . '</li>';
+//     }
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
+        'options' => ['class' => 'navbar-nav navbar-left'],
         'items' => $menuItems,
     ]);
     NavBar::end();

@@ -14,7 +14,8 @@ html #page #content .ks-popup-hidden {
 #bd,#ft,#content .layout,#footer {
 	width: 990px;
 	margin-left: auto;
-	margin-right: auto
+	margin-right: auto;
+	padding: 10px 0 0 0;
 }
 
 #bd {
